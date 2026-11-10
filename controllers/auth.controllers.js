@@ -11,7 +11,7 @@ export const signupUser = async (req, res) => {
                 return res.status(400).json({message: "Name, email, and password are required"});
           }
 
-          // Check if user already exists
+          // Check if user already exists or not
           const userExists = await User.findOne({email});
 
           if(userExists){
