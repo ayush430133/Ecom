@@ -36,7 +36,7 @@ export const signupUser = async (req, res) => {
      }
 }
 
-// Login user //
+// Login user  or logout user//
 
 export const loginUser = async (req, res) => {
       try{
